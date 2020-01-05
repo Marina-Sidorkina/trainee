@@ -1,0 +1,45 @@
+:root {
+  --text-color-main: #000000;
+  --text-color-date: #999999;
+  --text-color-input: #CCCCCC;
+  --text-color-button: #ffffff;
+  
+  --background-main: #ffffff;
+  --background-color-button: #4997D0;
+  --background-overlay: rgba(0, 0, 0, 0.322);
+  --background-image: #C4C4C4;
+  --border-radius-button: 3px;
+  --border-button-hover: #193d70;
+
+  --vertical-gap: 30px;
+
+  --font-main: "Roboto", sans-serif;
+  --font-extra: "Roboto Condensed", sans-serif;
+
+  --min-width: 320px;
+  --max-width: 768px;
+  --content-width-min: 280px;
+  --content-width-max: 728px;
+}
+
+html {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 56px;
+  min-width: var(--min-width);
+  min-height: 100%;
+  background-color: var(--background-main);
+  overflow-x: hidden;
+}
+
+img {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,29 @@
+.footer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: var(--content-width-min);
+  min-height: 56px;
+  border-top: 1px solid var(--text-color-input);
+}
+
+.footer__copyright {
+  font-family: var(--font-extra);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: var(--text-color-input);
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    width: var(--content-width-max);
+  }
+}
