@@ -3,9 +3,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
   height: 100%;
   background-color: var(--background-overlay); 
@@ -67,12 +64,14 @@
 }
 
 .modal__image {
+  display: block;
   box-sizing: border-box;
   width: 320px;
   height: 205px;
   margin: 0;
   padding: 0;
   background-color: var(--background-image);
+  background-color: grey;
 }
 
 .modal__form {
@@ -86,9 +85,11 @@
   box-sizing: border-box;
   list-style: none;
   width: 276px;
+  height: 90px;
   margin: 0 auto;
   padding: 0;
   margin-top: 25px;
+  overflow-y: scroll;
 }
 
 .modal__date {
@@ -148,14 +149,13 @@
   border-radius: var(--border-radius-button);
 }
 
+.modal__add-comment {
+  margin-bottom: 19px;
+}
+
 .modal__add-name:focus,
 .modal__add-comment:focus {
   color: var(--text-color-main);
-}
-
-.modal__add-name:hover,
-.modal__add-comment:hover {
-  border: 1px solid var(--text-color-date);
 }
 
 .modal__submit {
@@ -167,16 +167,14 @@
   cursor: pointer;
 }
 
-.modal__submit:hover {
-  border: 1px solid var(--border-button-hover);
-}
-
 @media (min-width: 768px) {
   .modal__content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 332px 214px;
+    grid-template-rows: 205px 158px;
+    grid-column-gap: 14px;
     padding: 30px;
+    padding-bottom: 32px;
     width: 619px;
     min-height: 425px;
     margin-left: -309.5px;
@@ -198,9 +196,15 @@
   }
 
   .modal__comments {
-    width: 214px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 200px;
+    height: auto;
     margin: 0;
     margin-top: 4px;
+    margin-bottom: 4px;
   }
   
   .modal__form {
@@ -220,6 +224,15 @@
   .modal__add-comment,
   .modal__submit {
     width: 332px;
+  }
+
+  .modal__add-name:hover,
+  .modal__add-comment:hover {
+    border: 1px solid var(--text-color-date);
+  }
+
+  .modal__submit:hover {
+    border: 1px solid var(--border-button-hover);
   }
 }
 

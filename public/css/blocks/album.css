@@ -25,10 +25,8 @@
   height: 171px;
   margin: 0;
   padding: 0;
-}
-
-.album__link:hover {
-  outline: 1px solid var(--text-color-date);
+  background-color: var(--background-image);
+  background-color: grey;
 }
 
 @media (min-width: 768px) {
@@ -42,5 +40,9 @@
   .album__link {
     width: 229px;
     height: 142px;
+  }
+
+  .album__link:hover {
+    box-shadow: 0 0 5px 2px  var(--text-color-date);
   }
 }
