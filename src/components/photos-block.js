@@ -14,10 +14,6 @@ export default class photosBlockComponent extends BaseComponent {
     return createPhotosBlockTemplate();
   }
 
-  set onChange(fn) {
-    this._onChange = fn;
-  }
-
   set onCommentSubmit(fn) {
     this._onCommentSubmit = fn;
   }
@@ -25,7 +21,6 @@ export default class photosBlockComponent extends BaseComponent {
   set onModalOpen(fn) {
     this._onModalOpen = fn;
   }
-
 
   _renderPhotos(containerElement) {
     const documentFragment = document.createDocumentFragment();

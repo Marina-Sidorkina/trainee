@@ -19,10 +19,6 @@ export default class BaseComponent {
 
   get template() {}
 
-  setState(newState = {}) {
-    this._state = Object.assign({}, this._state, newState);
-  }
-
   render() {
     if (!this._state.isRendered) {
       this._element = createElement(this.template);
@@ -38,10 +34,6 @@ export default class BaseComponent {
       this._element = null;
       this._state.isRendered = false;
     }
-  }
-
-  update(data) {
-    this._data = Object.assign({}, data);
   }
 
   createListeners() {}

@@ -16,7 +16,7 @@ const createCommentsTemplate = (comments) => (
   `${comments.map((comment) => createInitialCommentTemplate(comment)).join(``)}`
 );
 
-export const createCommentTemplate = (comment) => {
+export const createNewCommentTemplate = (comment) => {
   const date = new Date(comment.date);
   return `<li class="modal__comment" id="${comment.id}">
     <p class="modal__date">${(formatDate(date))}</p>

@@ -6,7 +6,7 @@
   align-items: center;
   width: var(--content-width-min);
   min-height: 56px;
-  border-top: 1px solid var(--text-color-input);
+  border-top: 1px solid var(--footer-border-color);
 }
 
 .footer__copyright {

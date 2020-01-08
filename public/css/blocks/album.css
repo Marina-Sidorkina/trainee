@@ -42,6 +42,6 @@
   }
 
   .album__link:hover {
-    box-shadow: 0 0 5px 2px  var(--text-color-date);
+    box-shadow: 0 0 5px 2px  var(--album-link-shadow-color);
   }
 }

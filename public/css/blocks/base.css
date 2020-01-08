@@ -3,15 +3,25 @@
   --text-color-date: #999999;
   --text-color-input: #cccccc;
   --text-color-button: #ffffff;
+
   --background-main: #ffffff;
   --background-color-button: #4997d0;
   --background-overlay: rgba(0, 0, 0, 0.322);
   --background-image: #c4c4c4;
+
+  --footer-border-color: #cccccc;
+  --album-link-shadow-color: #999999;
+  --modal-input-border-color: #cccccc;
+  --modal-input-hover-border-color: #999999;
+
   --border-radius-button: 3px;
   --border-button-hover: #193d70;
+
   --vertical-gap: 30px;
+
   --font-main: "Roboto", sans-serif;
   --font-extra: "Roboto Condensed", sans-serif;
+
   --min-width: 320px;
   --max-width: 768px;
   --content-width-min: 280px;

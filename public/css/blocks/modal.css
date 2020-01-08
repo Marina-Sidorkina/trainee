@@ -143,7 +143,7 @@
   margin-bottom: 20px;
   padding: 0;
   padding-left: 11px;
-  border: 1px solid var(--text-color-input);
+  border: 1px solid var(--modal-input-border-color);
   border-radius: var(--border-radius-button);
 }
 
@@ -226,7 +226,7 @@
 
   .modal__add-name:hover,
   .modal__add-comment:hover {
-    border: 1px solid var(--text-color-date);
+    border: 1px solid var(--modal-input-hover-border-color);
   }
 
   .modal__submit:hover {

@@ -1,4 +1,4 @@
-import {createModalTemplate, createCommentTemplate} from '../templates/modal';
+import {createModalTemplate, createNewCommentTemplate} from '../templates/modal';
 import BaseComponent from './base';
 import {createElement} from '../utils/element';
 
@@ -36,7 +36,7 @@ export default class ModalComponent extends BaseComponent {
 
   _createComment(comment) {
     return createElement(
-        createCommentTemplate(comment)
+        createNewCommentTemplate(comment)
     );
   }
 
