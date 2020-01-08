@@ -26,7 +26,6 @@
   margin: 0;
   padding: 0;
   background-color: var(--background-image);
-  background-color: grey;
 }
 
 @media (min-width: 768px) {

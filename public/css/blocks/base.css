@@ -1,21 +1,17 @@
 :root {
   --text-color-main: #000000;
   --text-color-date: #999999;
-  --text-color-input: #CCCCCC;
+  --text-color-input: #cccccc;
   --text-color-button: #ffffff;
-  
   --background-main: #ffffff;
-  --background-color-button: #4997D0;
+  --background-color-button: #4997d0;
   --background-overlay: rgba(0, 0, 0, 0.322);
-  --background-image: #C4C4C4;
+  --background-image: #c4c4c4;
   --border-radius-button: 3px;
   --border-button-hover: #193d70;
-
   --vertical-gap: 30px;
-
   --font-main: "Roboto", sans-serif;
   --font-extra: "Roboto Condensed", sans-serif;
-
   --min-width: 320px;
   --max-width: 768px;
   --content-width-min: 280px;

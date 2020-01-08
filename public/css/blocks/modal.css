@@ -1,11 +1,10 @@
 .modal {
-  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--background-overlay); 
+  background-color: var(--background-overlay);
 }
 
 .modal__content {
@@ -71,7 +70,6 @@
   margin: 0;
   padding: 0;
   background-color: var(--background-image);
-  background-color: grey;
 }
 
 .modal__form {
@@ -98,7 +96,7 @@
   font-weight: normal;
   font-size: 13px;
   line-height: 15px;
-  color:var(--text-color-date);
+  color: var(--text-color-date);
   margin: 0;
   padding: 0;
 }
@@ -206,7 +204,7 @@
     margin-top: 4px;
     margin-bottom: 4px;
   }
-  
+
   .modal__form {
     width: 332px;
     margin: 0;
